@@ -1,8 +1,6 @@
-module.exports = {
-    output: {
-      // Bog'liq direktoriya nomi va sozlashlar
-      dir: 'out',
-      public: '/',
-    },
-  };
-  
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    output: 'export',
+};
+
+export default nextConfig;
