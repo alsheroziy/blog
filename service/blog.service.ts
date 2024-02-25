@@ -49,6 +49,7 @@ export const getDetailedBlog = async (slug: string) => {
 						url
 					}
 					bio
+					id
 				}
 				content {
 					html
@@ -59,6 +60,10 @@ export const getDetailedBlog = async (slug: string) => {
 				}
 				slug
 				tag {
+					name
+					slug
+				}
+				category {
 					name
 					slug
 				}

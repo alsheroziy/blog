@@ -1,4 +1,5 @@
 import { ThemeProvider } from '@/components/providers/theme-provider'
+import { Toaster } from '@/components/ui/sonner'
 import { ChildProps } from '@/types'
 import type { Metadata } from 'next'
 import { Crete_Round, Work_Sans } from 'next/font/google'
@@ -16,9 +17,9 @@ const workSans = Work_Sans({
 })
 
 export const metadata: Metadata = {
-	title: 'Shehroz dasturlashga oid maqolalar',
+	title: 'Sammi dasturlashga oid maqolalar',
 	description:
-		"Dasturlashga oid so'nggi maqolalar, maslahatlar va qo'llanmalar. Bizning blog dasturlashni o'rganish va rivojlantirish uchun mo'ljallangan.",
+		'Dasturlash haqida yangiliklar, maslahatlar, va dasturlash sohasidagi eng soʻnggi xabarlar. Bizning blogda dasturlashni oʻrganish va rivojlantirish uchun qoʻllanma topishingiz mumkin.',
 }
 
 function RootLayout({ children }: ChildProps) {
@@ -34,6 +35,7 @@ function RootLayout({ children }: ChildProps) {
 					disableTransitionOnChange
 				>
 					{children}
+					<Toaster position='top-center' />
 				</ThemeProvider>
 			</body>
 		</html>
