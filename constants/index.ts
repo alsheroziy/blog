@@ -61,7 +61,7 @@ export const blogs = [
 			'How to hire a developer straight out of bootcamp — without getting burned',
 		description:
 			'There’s a worldwide talent shortage in software development, and nearly one-third of hiring managers have hired someone from a coding bootcamp to.',
-		author: 'Samar',
+		author: 'Shehroz',
 		tags: ['Full Stack'],
 		date: 'Dec 12, 2021',
 		image: '/blogs/04.jpg',
