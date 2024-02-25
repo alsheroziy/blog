@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 	description:
 		'Dasturlash haqida yangiliklar, dasturlash sohasidagi eng soʻnggi xabarlar. Bizning blogda dasturlashni oʻrganish va rivojlantirish uchun qoʻllanma topishingiz mumkin.',
 	authors: [{ name: 'Shehroz Raxmatov', url: 'https://github.com/alsheroziy' }],
-	icons: { icon: '/favicon.ico' },
+	icons: { icon: '/favicon.png' },
 	keywords:
 		"shehroz raxmatov, sheroz, shehroz blog, bloglar, sheroz blog, raxmatov shehroz, raxmatov sheroz, sheroz raxmatov, shehroz, shehroz dasturlash, github shehroz, portfolio, shehroz javascript, shehroz raqamli avlod, javascript, reactjs, vuejs, shehroz darslari, maqola, shehroz maqolalari, sheroz maqolalari, shehroz github, shehroz rezume, full stack, amedia shehroz, shehroz amediatv, amediatv shehroz, amediatv sheroz, amediatv dasturchisi, Amediatv IT loyihalari, umft shehroz, shehroz umft, umft sheroz, umft dasturchisi, umft dasturchisi shehroz, umft dasturchisi sheroz, shehroz umft dasturchisi, sheroz University of Management and Future Technologies, University of Management and Future Technologies shehroz, University of Management and Future Technologies sheroz, shehroz University of Management and Future Technologies, umft raxmatov, umft sheroz raxmatov, umft shehroz raxmatov, shehroz umft raxmatov, sheroz umft raxmatov, umft sheroz raxmatov, amediatv, Amediatv, alsheroziy, sheroziy, shehroziy",
 	openGraph: {
