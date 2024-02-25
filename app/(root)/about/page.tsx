@@ -25,7 +25,7 @@ function AboutPage() {
 				</div>
 			</div>
 			<h1 className='text-center text-4xl font-creteRound'>
-				We are the Sammi, <br /> Team of content writers and designers.
+				We are the Shehroz, <br /> Team of content writers and designers.
 			</h1>
 
 			<div className='grid grid-cols-4 gap-4 min-h-96 mt-6'>
