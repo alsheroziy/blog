@@ -9,7 +9,6 @@ export const getAuthors = async () => {
 			authors {
 				name
 				id
-				id
 				bio
 				image {
 					url

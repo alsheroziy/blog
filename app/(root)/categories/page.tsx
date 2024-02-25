@@ -1,13 +1,18 @@
-import CategoriesTagsCard from "@/components/cards/categories-tags";
-import { getCategories } from "@/service/category.service";
-import { Dot, Home, Link } from 'lucide-react'
-import React from 'react'
+import CategoriesTagsCard from '@/components/cards/categories-tags'
+import { getCategories } from '@/service/category.service'
+import { Dot, Home } from 'lucide-react'
+import { Metadata } from 'next'
+import Link from 'next/link'
+
+export const metadata: Metadata = {
+	title: 'All categories',
+}
 
 async function Page() {
+	const categories = await getCategories()
 
-  const categories = await getCategories()
-  return (
-    <div className='max-w-6xl mx-auto'>
+	return (
+		<div className='max-w-6xl mx-auto'>
 			<div className='relative min-h-[30vh] flex items-center justify-end flex-col'>
 				<h2 className='text-center text-4xl section-title font-creteRound mt-2'>
 					<span>Categories</span>
@@ -26,11 +31,13 @@ async function Page() {
 				</div>
 			</div>
 
-			<div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-24'>
-                {categories.map(item => <CategoriesTagsCard key={item.slug} type='categories' {...item} />)}
+			<div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-24 gap-4'>
+				{categories.map(item => (
+					<CategoriesTagsCard key={item.slug} {...item} type='categories' />
+				))}
 			</div>
 		</div>
-  )
+	)
 }
 
 export default Page
