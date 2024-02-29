@@ -69,10 +69,10 @@ function BlogCard(blog: Props) {
 					</div>
 					<Dot />
 					<div className='flex items-center gap-2'>
-						<Link href={`/tags/${blog.tag.slug}`}>
+						<Link href={`/tags/${blog.slug}`}>
 							<Badge variant={'secondary'} role='button'>
 								<Tag className='w-3 h-3 me-2' />
-								{blog.tag.name}
+								{blog.name}
 							</Badge>
 						</Link>
 						<Link href={`/categories/${blog.category.slug}`}>
