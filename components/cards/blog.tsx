@@ -72,7 +72,7 @@ function BlogCard(blog: Props) {
 						<Link href={`/tags/${blog.slug}`}>
 							<Badge variant={'secondary'} role='button'>
 								<Tag className='w-3 h-3 me-2' />
-								{blog.name}
+								{/* {blog.tag.name} */}
 							</Badge>
 						</Link>
 						<Link href={`/categories/${blog.category.slug}`}>
