@@ -6,6 +6,7 @@ import { Crete_Round, Work_Sans } from 'next/font/google'
 import './globals.css'
 import NextTopLoader from 'nextjs-toploader';
 import { GoogleAnalytics } from '@next/third-parties/google'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const creteRound = Crete_Round({
 	weight: ['400'],
@@ -57,6 +58,7 @@ function RootLayout({ children }: ChildProps) {
 					<NextTopLoader showSpinner={false}/>
 					{children}
 					<Toaster position='top-center' />
+					<SpeedInsights />
 				</ThemeProvider>
 			</body>
 			<GoogleAnalytics gaId="G-GQRJV56DHV" />
